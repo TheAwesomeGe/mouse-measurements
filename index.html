@@ -4,7 +4,6 @@
         <title>Mouse Measurements</title>
         <link rel="stylesheet" type="text/css" href="css/layout.css">
         <script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/hammer.js"></script>
         <script src="js/mm.js"></script>
     </head>
     <body>
@@ -17,12 +16,18 @@
             </div>
             <div id="optionsContainer">
                 <p>Length:
-                    <span id="length">0</span>
-                    <select id="lengthMetric">
-                        <option value="px">px</option>
-                        <option value="cm">cm</option>
-                    </select>
+                    <span id="length">0</span>px / 
+                    <span id="lengthcm">0</span>cm
                 </p>
+                <p id="areap">Area:
+                    <span id="area">0</span>px<sup>2</sup> / 
+                    <span id="areacm">0</span>cm<sup>2</sup>
+                </p>
+                <p>Mouse DPI:
+                    <input type="text" id="dpi" value="0" />
+                    <button id="setdpi">Set DPI</button>
+                </p>
+                <p><button id="poly">Make Polygon</button></p> 
             </div>
         </div>
         <script>setUpCanvas()</script>
